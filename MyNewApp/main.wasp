@@ -23,3 +23,13 @@ psl=}
 query getExcuse {
   fn: import { getExcuse } from "@ext/queries.js"
 }
+
+action saveExcuse {
+  fn: import { saveExcuse } from "@ext/actions.js",
+  entities: [Excuse]
+}
+
+query getAllSavedExcuses {
+  fn: import { getAllSavedExcuses } from "@ext/queries.js",
+  entities: [Excuse]
+}

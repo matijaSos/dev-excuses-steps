@@ -10,3 +10,7 @@ export const getExcuse = async () => {
       console.error(error);
     });
 }
+
+export const getAllSavedExcuses = async (_args, context) => {
+  return context.entities.Excuse.findMany()
+}
